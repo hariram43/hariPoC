@@ -19,3 +19,13 @@
     <finalName>JenkinsWar</finalName>
   </build>
 </project>
+<distributionManagement>
+   <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <url>http://13.71.70.45:8081/nexus/content/repositories/maven-snapshots</url>
+   </snapshotRepository>
+   <repository>
+      <id>nexus-snapshots</id>
+      <url>http://13.71.70.45:8081/nexus/content/repositories/maven-releases</url>
+   </repository>
+</distributionManagement>
