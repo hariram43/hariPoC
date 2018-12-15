@@ -34,11 +34,11 @@
    </snapshotRepository>
 </distributionManagement>
 <plugin>
-   <artifactId>maven-deploy-plugin</artifactId>
+   <artifactId>JenkinsWar1</artifactId>
    <version>2.7</version>
    <executions>
       <execution>
-         <id>default-deploy</id>
+         <id>JenkinsWar1</id>
          <phase>deploy</phase>
          <goals>
             <goal>deploy</goal>
