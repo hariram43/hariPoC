@@ -33,16 +33,3 @@
       <layout>default</layout>
    </snapshotRepository>
 </distributionManagement>
-<plugin>
-   <artifactId>JenkinsWar1</artifactId>
-   <version>2.7</version>
-   <executions>
-      <execution>
-         <id>JenkinsWar1</id>
-         <phase>deploy</phase>
-         <goals>
-            <goal>deploy</goal>
-         </goals>
-      </execution>
-   </executions>
-</plugin>
