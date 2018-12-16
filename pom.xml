@@ -18,18 +18,38 @@
   <build>
     <finalName>JenkinsWar</finalName>
   </build>
+    <build>
+    ...
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>2.8.2</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-deploy-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
 </project>
 <distributionManagement>
 <repository>
       <id>nexus-releases</id>
       <name>nexus-releases</name>
-      <url>http://104.211.218.75:8081/repository/maven-releases/</url>
+      <url>http://13.71.84.32:8081/repository/maven-releases/</url>
       <layout>default</layout>
    </repository>
    <snapshotRepository>
       <id>nexus-snapshots</id>
       <name>nexus-snapshots</name>
-      <url>http://104.211.218.75:8081/repository/maven-snapshots/</url>
+      <url>http://13.71.84.32:8081/repository/maven-snapshots/</url>
       <layout>default</layout>
    </snapshotRepository>
 </distributionManagement>
