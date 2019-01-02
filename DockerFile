@@ -3,5 +3,5 @@ From tomcat:7-jre7
 # Maintainer 
 MAINTAINER "hariram.jeyaraman@infosys.com" 
 # Copy to images tomcat path 
-ADD target/ /usr/local/tomcat7/webapps/
+ADD target/* /usr/local/tomcat/webapps/
 EXPOSE 80
