@@ -1,0 +1,262 @@
+Started by upstream project "PoC" build number 102
+originally caused by:
+ Started by GitHub push by hariram43
+Building in workspace /var/lib/jenkins/workspace/PoC/default
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+Cloning the remote Git repository
+Cloning repository https://github.com/hariram43/hariPoC.git
+ > git init /var/lib/jenkins/workspace/PoC/default # timeout=10
+Fetching upstream changes from https://github.com/hariram43/hariPoC.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/hariram43/hariPoC.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/hariram43/hariPoC.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/hariram43/hariPoC.git # timeout=10
+Fetching upstream changes from https://github.com/hariram43/hariPoC.git
+ > git fetch --tags --progress https://github.com/hariram43/hariPoC.git +refs/heads/*:refs/remotes/origin/*
+Checking out Revision a0345d3691b5616e78051be183b2e58a73218362 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a0345d3691b5616e78051be183b2e58a73218362
+Commit message: "Create maven_settingxml.txt"
+ > git rev-list --no-walk d1611b3c4a5a558e33a2db41cf2391f7a0eff37f # timeout=10
+[default] $ /usr/share/maven/bin/mvn clean deploy
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JenkinsWar Maven Webapp 0.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ JenkinsWar1 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ JenkinsWar1 ---
+[debug] execute contextualize
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/PoC/default/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ JenkinsWar1 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ JenkinsWar1 ---
+[debug] execute contextualize
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/PoC/default/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ JenkinsWar1 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.10:test (default-test) @ JenkinsWar1 ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /var/lib/jenkins/workspace/PoC/default/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-war-plugin:2.1.1:war (default-war) @ JenkinsWar1 ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [JenkinsWar1] in [/var/lib/jenkins/workspace/PoC/default/target/JenkinsWar]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/lib/jenkins/workspace/PoC/default/src/main/webapp]
+[INFO] Webapp assembled in [20 msecs]
+[INFO] Building war: /var/lib/jenkins/workspace/PoC/default/target/JenkinsWar.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ JenkinsWar1 ---
+[INFO] Installing /var/lib/jenkins/workspace/PoC/default/target/JenkinsWar.war to /var/lib/jenkins/.m2/repository/com/jenkins/demo/JenkinsWar1/0.0.3-SNAPSHOT/JenkinsWar1-0.0.3-SNAPSHOT.war
+[INFO] Installing /var/lib/jenkins/workspace/PoC/default/pom.xml to /var/lib/jenkins/.m2/repository/com/jenkins/demo/JenkinsWar1/0.0.3-SNAPSHOT/JenkinsWar1-0.0.3-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-deploy-plugin:2.7:deploy (default-deploy) @ JenkinsWar1 ---
+Downloading: http://13.71.85.113:8081/repository/maven-snapshots/com/jenkins/demo/JenkinsWar1/0.0.3-SNAPSHOT/maven-metadata.xml
+780/780 B   
+            
+Downloaded: http://13.71.85.113:8081/repository/maven-snapshots/com/jenkins/demo/JenkinsWar1/0.0.3-SNAPSHOT/maven-metadata.xml (780 B at 5.3 KB/sec)
+Uploading: http://13.71.85.113:8081/repository/maven-snapshots/com/jenkins/demo/JenkinsWar1/0.0.3-SNAPSHOT/JenkinsWar1-0.0.3-20190103.121946-38.war
+2/3 KB      
+3/3 KB   
+         
+Uploaded: http://13.71.85.113:8081/repository/maven-snapshots/com/jenkins/demo/JenkinsWar1/0.0.3-SNAPSHOT/JenkinsWar1-0.0.3-20190103.121946-38.war (3 KB at 16.0 KB/sec)
+Uploading: http://13.71.85.113:8081/repository/maven-snapshots/com/jenkins/demo/JenkinsWar1/0.0.3-SNAPSHOT/JenkinsWar1-0.0.3-20190103.121946-38.pom
+2/2 KB   
+         
+Uploaded: http://13.71.85.113:8081/repository/maven-snapshots/com/jenkins/demo/JenkinsWar1/0.0.3-SNAPSHOT/JenkinsWar1-0.0.3-20190103.121946-38.pom (2 KB at 10.5 KB/sec)
+Downloading: http://13.71.85.113:8081/repository/maven-snapshots/com/jenkins/demo/JenkinsWar1/maven-metadata.xml
+327/327 B   
+            
+Downloaded: http://13.71.85.113:8081/repository/maven-snapshots/com/jenkins/demo/JenkinsWar1/maven-metadata.xml (327 B at 7.8 KB/sec)
+Uploading: http://13.71.85.113:8081/repository/maven-snapshots/com/jenkins/demo/JenkinsWar1/0.0.3-SNAPSHOT/maven-metadata.xml
+780/780 B   
+            
+Uploaded: http://13.71.85.113:8081/repository/maven-snapshots/com/jenkins/demo/JenkinsWar1/0.0.3-SNAPSHOT/maven-metadata.xml (780 B at 6.3 KB/sec)
+Uploading: http://13.71.85.113:8081/repository/maven-snapshots/com/jenkins/demo/JenkinsWar1/maven-metadata.xml
+327/327 B   
+            
+Uploaded: http://13.71.85.113:8081/repository/maven-snapshots/com/jenkins/demo/JenkinsWar1/maven-metadata.xml (327 B at 3.4 KB/sec)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.252s
+[INFO] Finished at: Thu Jan 03 12:19:47 UTC 2019
+[INFO] Final Memory: 8M/14M
+[INFO] ------------------------------------------------------------------------
+[default] $ docker build -t harijey/poc:devopspoc --pull=true /var/lib/jenkins/workspace/PoC/default
+Sending build context to Docker daemon  165.4kB
+
+Step 1/4 : From tomcat:8-jre8
+8-jre8: Pulling from library/tomcat
+Digest: sha256:fd162e0f238deae5b7028934377abc40658e82d7c9b2a0038546466bb0d89e6d
+Status: Image is up to date for tomcat:8-jre8
+ ---> 1a51cb5e3006
+Step 2/4 : MAINTAINER "hariram.jeyaraman@infosys.com"
+ ---> Using cache
+ ---> 7c23194395ef
+Step 3/4 : ADD target/JenkinsWar.war /usr/local/tomcat/webapps/
+ ---> 15fb4a0bf1ac
+Step 4/4 : EXPOSE 80
+ ---> Running in 8c74272e6716
+Removing intermediate container 8c74272e6716
+ ---> b61cad564a65
+Successfully built b61cad564a65
+Successfully tagged harijey/poc:devopspoc
+[default] $ docker tag b61cad564a65 harijey/poc:latest
+[default] $ docker inspect b61cad564a65
+[default] $ docker push harijey/poc:devopspoc
+The push refers to repository [docker.io/harijey/poc]
+2c279df13f4c: Preparing
+10acf9008214: Preparing
+f725cace5e8c: Preparing
+70333c64c1a2: Preparing
+a8586e8d29fb: Preparing
+2d63501da7e5: Preparing
+e6ae888dd260: Preparing
+80917357f055: Preparing
+bfc5dbc4d7a7: Preparing
+b53b57a50746: Preparing
+d2518892581f: Preparing
+c581f4ede92d: Preparing
+e6ae888dd260: Waiting
+80917357f055: Waiting
+bfc5dbc4d7a7: Waiting
+b53b57a50746: Waiting
+d2518892581f: Waiting
+c581f4ede92d: Waiting
+2d63501da7e5: Waiting
+10acf9008214: Layer already exists
+f725cace5e8c: Layer already exists
+a8586e8d29fb: Layer already exists
+70333c64c1a2: Layer already exists
+2d63501da7e5: Layer already exists
+80917357f055: Layer already exists
+e6ae888dd260: Layer already exists
+bfc5dbc4d7a7: Layer already exists
+b53b57a50746: Layer already exists
+d2518892581f: Layer already exists
+c581f4ede92d: Layer already exists
+2c279df13f4c: Pushed
+devopspoc: digest: sha256:221dd129b21de3a0304d95b9f1fa1a1fd4223745a839137b533effc5b13ac0c1 size: 2834
+[default] $ docker push harijey/poc:latest
+The push refers to repository [docker.io/harijey/poc]
+2c279df13f4c: Preparing
+10acf9008214: Preparing
+f725cace5e8c: Preparing
+70333c64c1a2: Preparing
+a8586e8d29fb: Preparing
+2d63501da7e5: Preparing
+e6ae888dd260: Preparing
+80917357f055: Preparing
+bfc5dbc4d7a7: Preparing
+b53b57a50746: Preparing
+d2518892581f: Preparing
+c581f4ede92d: Preparing
+2d63501da7e5: Waiting
+bfc5dbc4d7a7: Waiting
+b53b57a50746: Waiting
+e6ae888dd260: Waiting
+80917357f055: Waiting
+d2518892581f: Waiting
+10acf9008214: Layer already exists
+f725cace5e8c: Layer already exists
+70333c64c1a2: Layer already exists
+a8586e8d29fb: Layer already exists
+2c279df13f4c: Layer already exists
+80917357f055: Layer already exists
+e6ae888dd260: Layer already exists
+bfc5dbc4d7a7: Layer already exists
+2d63501da7e5: Layer already exists
+b53b57a50746: Layer already exists
+c581f4ede92d: Layer already exists
+d2518892581f: Layer already exists
+latest: digest: sha256:221dd129b21de3a0304d95b9f1fa1a1fd4223745a839137b533effc5b13ac0c1 size: 2834
+[default] $ mvn -f /var/lib/jenkins/workspace/PoC/default/pom.xml -e -B sonar:sonar -Dsonar.host.url=http://13.71.85.113:9000/sonar ********
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JenkinsWar Maven Webapp 0.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- sonar-maven-plugin:3.5.0.1254:sonar (default-cli) @ JenkinsWar1 ---
+[INFO] User cache: /var/lib/jenkins/.sonar/cache
+[INFO] SonarQube version: 6.5.0
+[INFO] Default locale: "en_US", source code encoding: "UTF-8" (analysis is platform dependent)
+[INFO] Load global settings
+[INFO] Load global settings (done) | time=90ms
+[INFO] User cache: /var/lib/jenkins/.sonar/cache
+[INFO] Load plugins index
+[INFO] Load plugins index (done) | time=5ms
+[INFO] Process project properties
+[INFO] Load project repositories
+[INFO] Load project repositories (done) | time=156ms
+[INFO] Load quality profiles
+[INFO] Load quality profiles (done) | time=51ms
+[INFO] Load active rules
+[INFO] Load active rules (done) | time=987ms
+[INFO] Load metrics repository
+[INFO] Load metrics repository (done) | time=173ms
+[INFO] Publish mode
+[INFO] Project key: com.jenkins.demo:JenkinsWar1
+[INFO] -------------  Scan JenkinsWar Maven Webapp
+[INFO] Load server rules
+[INFO] Load server rules (done) | time=49ms
+[INFO] Base dir: /var/lib/jenkins/workspace/PoC/default
+[INFO] Working dir: /var/lib/jenkins/workspace/PoC/default/target/sonar
+[INFO] Source paths: src/main/webapp, pom.xml
+[INFO] Source encoding: UTF-8, default locale: en_US
+[INFO] Index files
+[INFO] 3 files indexed
+[INFO] Quality profile for xml: Sonar way
+[INFO] Sensor SonarJavaXmlFileSensor [java]
+[INFO] 2 source files to be analyzed
+[INFO] Sensor SonarJavaXmlFileSensor [java] (done) | time=708ms
+[INFO] Sensor XML Sensor [xml]
+[INFO] 2/2 source files have been analyzed
+[INFO] Sensor XML Sensor [xml] (done) | time=212ms
+[INFO] Sensor Analyzer for "php.ini" files [php]
+[INFO] Sensor Analyzer for "php.ini" files [php] (done) | time=11ms
+[INFO] Sensor Zero Coverage Sensor
+[INFO] Sensor Zero Coverage Sensor (done) | time=26ms
+[INFO] Sensor CPD Block Indexer
+[INFO] Sensor CPD Block Indexer (done) | time=0ms
+[INFO] Calculating CPD for 0 files
+[INFO] CPD calculation finished
+[INFO] Analysis report generated in 202ms, dir size=23 KB
+[INFO] Analysis reports compressed in 23ms, zip size=8 KB
+[INFO] Analysis report uploaded in 171ms
+[INFO] ANALYSIS SUCCESSFUL, you can browse http://13.71.85.113:9000/sonar/dashboard/index/com.jenkins.demo:JenkinsWar1
+[INFO] Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+[INFO] More about the report processing at http://13.71.85.113:9000/sonar/api/ce/task?id=AWgTqF21NJglgseRP5T2
+[INFO] Task total time: 5.984 s
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.782s
+[INFO] Finished at: Thu Jan 03 12:20:28 UTC 2019
+[INFO] Final Memory: 12M/64M
+[INFO] ------------------------------------------------------------------------
+SonarQube analysis completed: SUCCESS
+Finished: SUCCESS
