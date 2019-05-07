@@ -1,0 +1,24 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: arj-test
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: hello-world
+        tier: backend
+    spec:
+      containers:
+      - name: arj-test
+        image: 637373963597.dkr.ecr.us-east-1.amazonaws.com/poccap:latest 
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+        env:
+        - name: GET_HOSTS_FROM
+          value: dns
+        ports:
+        - containerPort: 8080
