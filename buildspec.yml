@@ -13,11 +13,11 @@ phases:
       - echo Build started on `date`
       - mvn clean install
       - echo building docker image ...
-      - docker build -t poccap .
-      - docker tag poccap:latest 637373963597.dkr.ecr.us-east-1.amazonaws.com/poccap:latest
+      - docker build -t demo .
+      - docker tag demo:latest 637373963597.dkr.ecr.us-east-1.amazonaws.com/demo:latest
   post_build:
     commands:
       - echo Build completed on `date`
       - echo pushing the docker images to ecr ..
-      - docker push 637373963597.dkr.ecr.us-east-1.amazonaws.com/poccap:latest
+      - docker push 637373963597.dkr.ecr.us-east-1.amazonaws.com/demo:latest
 
